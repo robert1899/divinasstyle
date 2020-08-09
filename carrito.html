@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/popper.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/sweetalert2.min.css">
+
+    <title>Carrito de Compras</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="row align-items-stretch justify-content-between">
+                <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+                    <a class="navbar-brand" href="#">BODEGUITA DIVINAS`S STYLE</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item dropdown">
+                                <img src="img/cart.jpeg" class="nav-link dropdown-toggle img-fluid" height="70px"
+                                    width="70px" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false"></img>
+                                <div id="carrito" class="dropdown-menu" aria-labelledby="navbarCollapse">
+                                    <table id="lista-carrito" class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Imagen</th>
+                                                <th>Nombre</th>
+                                                <th>Precio</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+
+                                    <a href="#" id="vaciar-carrito" class="btn btn-primary btn-block">Vaciar Carrito</a>
+                                    <a href="#" id="procesar-pedido" class="btn btn-danger btn-block">Procesar
+                                        Compra</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 my-4 mx-auto text-center">
+            <h1 class="display-4 mt-4">Lista de Productos</h1>
+            <p class="lead">Selecciona uno de nuestros productos y accede a un descuento</p>
+        </div>
+
+        <div class="container" id="lista-productos">
+
+            <div class="card-deck mb-3 text-center">
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Tratamiento reparador cabellos dañados</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="imagenes/lakme/cuidadoCapilar/deep-care-balm2-1.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$<span class="">29.11</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <b>
+                                <li>Información</li>
+                            </b>
+                            <li>300 ml. Nutre, aumenta la resistencia y fortalece los enlaces internos del cabello,
+                                formando una película protectora, repone las sustancias estructurales propias de la
+                                fibra capilar. Efecto anti-aging.
+                                Devuelve la suavidad y el nivel de hidratación natural.
+                            </li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="1">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Tratamiento protector Cabellos Coloreados LAKME</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="imagenes/lakme/cuidadoCapilar/color-stay-treatment2-2.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$<span class="">29.11</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <b>
+                                <li>Información</li>
+                            </b>
+                            <li>250 ml. Sistema protector long-lasting prolonga las cualidades del color, brillo y
+                                luminosidad.
+                                Hidrata, repara la fibra capilar y refuerza la cutícula.</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="2">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Cera modeladora texture putty cool – K.STYLE – LAKME</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="imagenes/lakme/Styling/k-style-texture-putty-working-paste.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$<span class="">12.80</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <b>
+                                <li>Información</li>
+                            </b>
+                            <li>100 ml. Separa, define y da forma.
+                                Sutil efecto mate.
+                                Textura moldeable.
+                                Fuerte fijación del peinado para cabello grueso..</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="3">Comprar</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card-deck mb-3 text-center">
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">TEKNIA
+                            FRIZZ CONTROL SHAMPOO</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="imagenes/lakme/cuidadoCapilar/frizz-control-conditioner2-1.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$<span class="">18.40</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li><b>Información</b></li>
+                            <li>Libre de sulfatos.
+                                Hidrata y restaura la suavidad del cabello rebelde y voluminoso
+                                Controla el encrespado en cabellos lisos y rizados. Aporta un tacto natural.</li>
+
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="4">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Ampolla active shock concentrate</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="imagenes/lakme/TratamientosCapilares/k-therapy-active-shock-concentrate.jpg"
+                            class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$<span class="">5.75</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li><b>Información</b></li>
+                            <li>6 ml. Concentrado activo que actúa de forma intensiva en la prevención de la caída
+                                capilar</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="5">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Shampoo for men para canas</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="imagenes/Recamier/HAIR-LOSS-CONTROL.png" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$<span class="">2.97</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li><b>Información</b></li>
+                            <li>300 ml. Shampoo que limpia, restaura y rejuvenece las canas.
+                                Mantiene el color natural de las canas, evitando los indeseados reflejos amarillentos.
+                            </li>
+
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="6">Comprar</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card-deck mb-3 text-center">
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Tratamiento pro keratina ultra force </h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="imagenes/Recamier/KERATIN-ULTRA-FORCE-LEAVE-ON-TREATMENT-X-300-g.png"
+                            class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$<span class="">4.53</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li><b>Información</b></li>
+                            <li>300 g. Recupera la hidratación y suavidad del cabello. Su combinación de tres
+                                ingredientes emolientes: Aceites de Argán, Macadamia y Pracaxi facilitan el peinado del
+                                cabello seco o húmedo.</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="7">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Alisador Para El Cabello 5 Minutos</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="imagenes/Recamier/strong-hair-relaxer.png" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$<span class="">3.56</span></h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li><b>Información</b></li>
+                            <li>Es una crema alisadora suave que permite dar un extraordinario liso a los cabellos
+                                ondulados o rizados sueltos. Modifica la estructura de la fibra capilar, alisando sin
+                                maltratar. Alisa el cabello en pocos minutos.</li>
+
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="8">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Silicon pro keratina ultra force</h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="imagenes/Recamier/NovedadKeratina.jpg" class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$<span class="">7.88</span></h1>
+
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li><b>Información</b></li>
+                            <li>120 g. Recupera la hidratación y suavidad del cabello. Su combinación de tres
+                                ingredientes emolientes: Aceites de Argán, Macadamia y Pracaxi facilitan el peinado del
+                                cabello seco o húmedo; aumenta el brillo.
+
+                            </li>
+
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="9">Comprar</a>
+                    </div>
+                </div>
+
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-bold">Acondiconador thermal proteccion del cabello </h4>
+                    </div>
+                    <div class="card-body">
+                        <img src="imagenes/Recamier/acondicionador_thermal-protection-copia.2209.png"
+                            class="card-img-top">
+                        <h1 class="card-title pricing-card-title precio">$<span class="">3.00</span></h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <b>
+                                <li>Información</li>
+                            </b>
+                            <li>Acondicionador de pelo recamier proporciona protección contra el calor mientras
+                                desenreda y bloquea la humedad. Este acondicionador de cabello profundo es el paquete
+                                completo para ti.</li>
+                        </ul>
+                        <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="10">Comprar</a>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </main>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/sweetalert2.min.js"></script>
+    <script src="js/carrito.js"></script>
+    <script src="js/pedido.js"></script>
+
+</body>
+
+</html>
